@@ -53,6 +53,11 @@ namespace mvc_test
                     name: "blog2",
                     template: "blog/{category}/{subcategory}/{article}",
                     defaults: new { controller = "Home", action = "BlogArticle" });
+                
+                routes.MapRoute(
+                    name: "hello",
+                    template: "hello/{name}",
+                    defaults: new { controller = "Home", action = "Hello" });
             });
         }
     }
